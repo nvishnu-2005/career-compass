@@ -25,8 +25,8 @@ export interface RecommendationResult {
   nextSteps: string[];
 }
 
-const researchKeywords = ["research", "academic", "phd", "scholar", "publish", "professor", "thesis"];
-const leadershipKeywords = ["leadership", "ceo", "founder", "board", "executive", "thought leader", "industry leader", "philanthropy"];
+const researchKeywords = ["research", "academic", "phd", "scholar", "publish", "publication", "professor", "thesis", "scientist", "innovation"];
+const leadershipKeywords = ["leadership", "ceo", "founder", "board", "executive", "director", "vp", "vice president", "senior manager", "thought leader", "industry leader", "philanthropy"];
 
 export function generateRecommendation(input: RecommendationInput): RecommendationResult {
   const goal = input.careerGoal.toLowerCase();
